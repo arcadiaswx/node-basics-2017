@@ -29,10 +29,10 @@ const request = https.get(`https://teamtreehouse.com/${username}.json`, response
 
                     });
 }
+console.log(process.argv);
+// const users = ["chalkers", "craigbooker", "davemcfarland"];
 
-const users = ["chalkers", "craigbooker"];
-
-users.forEach(username => {
-    getProfile(username);
-});
+// users.forEach(username => {
+//     getProfile(username);
+// });
 
