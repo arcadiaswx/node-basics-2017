@@ -30,6 +30,9 @@ const request = https.get(`https://teamtreehouse.com/${username}.json`, response
                     });
 }
 
-getProfile("craigbooker");
-getProfile("chalkers");
+const users = ["chalkers", "craigbooker"];
+
+users.forEach(username => {
+    getProfile(username);
+});
 
